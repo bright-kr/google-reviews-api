@@ -1,6 +1,6 @@
 # Google Reviews API
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/serp-api/google-search/reviews)
+[![Promo](https://github.com/bright-kr/LinkedIn-Scraper/blob/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/products/serp-api/google-search/reviews)
 
 이 리포지토리는 Google Reviews 데이터를 수집하기 위한 두 가지 접근 방식을 제공합니다:
 
@@ -28,7 +28,7 @@
 ## Free Scraper
 더 작은 규모로 리뷰를 추출해야 하는 분들을 위한 빠르고 간단한 スクレイピング 도구입니다.
 
-<img width="700" alt="scrape-google-reviews-pizza-place" src="https://github.com/luminati-io/google-reviews-api/blob/main/images/420648584-8f8069c4-3521-49d1-ba77-8eb6e840de2b.png" />
+<img width="700" alt="scrape-google-reviews-pizza-place" src="https://github.com/bright-kr/google-reviews-api/blob/main/images/420648584-8f8069c4-3521-49d1-ba77-8eb6e840de2b.png" />
 
 ### Setup
 
@@ -49,7 +49,7 @@ playwright install
 
 ### Quick Start
 
-1. [google-reviews-scraper.py](https://github.com/luminati-io/Google-Reviews-API/blob/main/google-reviews-scraper/google-reviews-scraper.py)를 열고 다음 변수를 업데이트합니다:
+1. [google-reviews-scraper.py](https://github.com/bright-kr/Google-Reviews-API/blob/main/google-reviews-scraper/google-reviews-scraper.py)를 열고 다음 변수를 업데이트합니다:
     - `url` – 비즈니스의 Google Maps URL입니다.
     - `target_reviews` – スクレイピング할 리뷰 수입니다.
 2. 스크립트를 실행합니다.
@@ -75,7 +75,7 @@ playwright install
 }
 ```
 
-👉 [전체 JSON 출력](https://github.com/luminati-io/Google-Reviews-API/blob/main/google-reviews-results/reviews_output.json)을 확인해 보시기 바랍니다.
+👉 [전체 JSON 출력](https://github.com/bright-kr/Google-Reviews-API/blob/main/google-reviews-results/reviews_output.json)을 확인해 보시기 바랍니다.
 
 
 ### Limitations
@@ -106,7 +106,7 @@ Free Scraper에는 중요한 제약이 있습니다:
 1. **Prerequisites:**
     - [Bright Data account](https://brightdata.co.kr/)를 생성합니다(신규 사용자는 $5 크레딧 제공)
     - [API key](https://docs.brightdata.com/general/account/api-token)를 발급받습니다
-2. **Setup:** API를 통합하기 위해 [단계별 가이드](https://github.com/luminati-io/Google-Reviews-API/blob/main/setup-serp-api-guide.md)를 따르시기 바랍니다
+2. **Setup:** API를 통합하기 위해 [단계별 가이드](https://github.com/bright-kr/Google-Reviews-API/blob/main/setup-serp-api-guide.md)를 따르시기 바랍니다
 3. **Implementation Methods:**
     - Direct API Access
     - Native Proxy-Based Access
@@ -151,7 +151,7 @@ with open("serp-direct-api.json", "w") as file:
 print("Response saved to 'serp-direct-api.json'.")
 ```
 
-👉 [전체 JSON 출력](https://github.com/luminati-io/Google-Reviews-API/blob/main/google-reviews-api-results/serp-direct-api.json)을 확인해 보시기 바랍니다.
+👉 [전체 JSON 출력](https://github.com/bright-kr/Google-Reviews-API/blob/main/google-reviews-api-results/serp-direct-api.json)을 확인해 보시기 바랍니다.
 
 > **Note:** 파싱된 JSON에는 `brd_json=1`을 사용하고, 파싱된 JSON + 전체 중첩 HTML에는 `brd_json=html`을 사용하시기 바랍니다.
 > 
@@ -194,7 +194,7 @@ with open("serp-native-proxy.json", "w", encoding="utf-8") as file:
 print("Response saved to 'serp-native-proxy.json'.")
 ```
 
-👉 [전체 JSON 출력](https://github.com/luminati-io/Google-Reviews-API/blob/main/google-reviews-api-results/serp-native-proxy.json)을 확인해 보시기 바랍니다.
+👉 [전체 JSON 출력](https://github.com/bright-kr/Google-Reviews-API/blob/main/google-reviews-api-results/serp-native-proxy.json)을 확인해 보시기 바랍니다.
 
 > **Note:** 프로덕션 환경에서는 [SSL Certificate Guide](https://docs.brightdata.com/general/account/ssl-certificate)에 설명된 대로 Bright Data의 SSL 인증서를 로드하시기 바랍니다.
 >
@@ -203,7 +203,7 @@ print("Response saved to 'serp-native-proxy.json'.")
 Bright Data의 API는 리뷰 추출을 정밀하게 조정하기 위한 여러 고급 파라メータ를 지원합니다.
 
 ### Feature ID (fid)
-<img width="700" alt="scrape-google-reviews-building" src="https://github.com/luminati-io/google-reviews-api/blob/main/images/420657506-0bc3b223-adf4-487a-9c75-11679b16907d.png" />
+<img width="700" alt="scrape-google-reviews-building" src="https://github.com/bright-kr/google-reviews-api/blob/main/images/420657506-0bc3b223-adf4-487a-9c75-11679b16907d.png" />
 
 feature ID는 비즈니스 또는 위치에 대한 고유 식별자입니다. 이를 찾는 방법은 다음과 같습니다:
 
@@ -214,7 +214,7 @@ feature ID는 비즈니스 또는 위치에 대한 고유 식별자입니다. �
 
 ### Localization (hl)
 
-<img width="700" alt="google-reviews-scraper-building" src="https://github.com/luminati-io/google-reviews-api/blob/main/images/420665500-0f1b630e-cb2a-4125-a7de-64be656a2f5b.png" />
+<img width="700" alt="google-reviews-scraper-building" src="https://github.com/bright-kr/google-reviews-api/blob/main/images/420665500-0f1b630e-cb2a-4125-a7de-64be656a2f5b.png" />
 
 두 글자 언어 코드를 사용하여 선호 언어를 지정합니다.
 
@@ -300,7 +300,7 @@ curl --proxy brd.superproxy.io:33335 \
 
 - **Documentation**: [SERP API Docs](https://docs.brightdata.com/scraping-automation/serp-api/)
 - **SEO Use Cases**: [SEO Tracking and Insights](https://brightdata.co.kr/use-cases/serp-tracking)
-- **Additional Guides**: [Web Unlocker API](https://github.com/luminati-io/web-unlocker-api), [SERP API](https://github.com/luminati-io/serp-api), [Google Search API](https://github.com/luminati-io/google-search-api), [Google News Scraper](https://github.com/luminati-io/Google-News-Scraper), [Google Trends API](https://github.com/luminati-io/google-trends-api)
+- **Additional Guides**: [Web Unlocker API](https://github.com/bright-kr/web-unlocker-api), [SERP API](https://github.com/bright-kr/serp-api), [Google Search API](https://github.com/bright-kr/google-search-api), [Google News Scraper](https://github.com/bright-kr/Google-News-Scraper), [Google Trends API](https://github.com/bright-kr/google-trends-api)
 - **Technical Articles**:
     - [Best SERP APIs](https://brightdata.co.kr/blog/web-data/best-serp-apis)
     - [Build a RAG Chatbot with SERP API](https://brightdata.co.kr/blog/web-data/build-a-rag-chatbot)
