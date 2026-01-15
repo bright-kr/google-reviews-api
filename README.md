@@ -26,7 +26,7 @@
 - [Support & Resources](#support--resources)
 
 ## Free Scraper
-더 작은 규모로 리뷰를 추출해야 하는 분들을 위한 빠르고 간단한 スクレイピング 도구입니다.
+더 작은 규모로 리뷰를 추출해야 하는 분들을 위한 빠르고 간단한 스크레이핑 도구입니다.
 
 <img width="700" alt="scrape-google-reviews-pizza-place" src="https://github.com/bright-kr/google-reviews-api/blob/main/images/420648584-8f8069c4-3521-49d1-ba77-8eb6e840de2b.png" />
 
@@ -44,17 +44,17 @@ pip install playwright
 playwright install
 ```
 
-> **Webスクレイピング이 처음이신가요?** 당사의 [Beginner's Guide to Web Scraping with Python](https://brightdata.co.kr/blog/how-tos/web-scraping-with-python)을 확인해 보시기 바랍니다.
+> **Web스크레이핑이 처음이신가요?** 당사의 [Beginner's Guide to Web Scraping with Python](https://brightdata.co.kr/blog/how-tos/web-scraping-with-python)을 확인해 보시기 바랍니다.
 > 
 
 ### Quick Start
 
 1. [google-reviews-scraper.py](https://github.com/bright-kr/Google-Reviews-API/blob/main/google-reviews-scraper/google-reviews-scraper.py)를 열고 다음 변수를 업데이트합니다:
     - `url` – 비즈니스의 Google Maps URL입니다.
-    - `target_reviews` – スクレイピング할 리뷰 수입니다.
+    - `target_reviews` – 스크레이핑할 리뷰 수입니다.
 2. 스크립트를 실행합니다.
 
-💡 **Pro Tip:** Google의 アンチボット(anti-scraping) 시스템에 의한 탐지를 줄이려면 `HEADLESS = False`로 설정하시기 바랍니다.
+💡 **Pro Tip:** Google의 안티봇(anti-scraping) 시스템에 의한 탐지를 줄이려면 `HEADLESS = False`로 설정하시기 바랍니다.
 
 ### Sample Output
 
@@ -82,10 +82,10 @@ playwright install
 
 Free Scraper에는 중요한 제약이 있습니다:
 
-- IPアドレス 차단 위험이 높습니다
+- IP 주소 차단 위험이 높습니다
 - 리クエスト 볼륨이 제한적입니다
 - CAPTCHA가 자주 발생합니다
-- 대규모 スクレイピング에는 신뢰성이 떨어집니다
+- 대규모 스크레이핑에는 신뢰성이 떨어집니다
 
 신뢰할 수 있는 대규모 데이터 수집을 위해서는 더 고급 솔루션이 필요합니다.
 
@@ -113,7 +113,7 @@ Free Scraper에는 중요한 제약이 있습니다:
 
 ### Direct API Access
 
-API エンドポイント로 직접 리クエスト합니다.
+API 엔드포인트로 직접 리クエスト합니다.
 
 **cURL Example:**
 
@@ -158,7 +158,7 @@ print("Response saved to 'serp-direct-api.json'.")
 
 ### Native Proxy-Based Access
 
-다음과 같이 プロキシ 라우팅 방식을 사용할 수도 있습니다:
+다음과 같이 프록시 라우팅 방식을 사용할 수도 있습니다:
 
 **cURL Example:**
 
